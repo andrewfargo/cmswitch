@@ -7,7 +7,10 @@ Does nothing if the device is unplugged to start.
 
 Execution, typically by typing `cmswitch` into the terminal, will start the switch in the foreground. A SIGINT will stop it (^C).
 
-To run in the background `cmswitch -d` or `cmswitch -d start` will run the switch as a daemon. `cmswitch -d stop` will stop it.
+## Future Directions
+
+Eventually, I want to turn this into its own D-Bus object so that other processes can interact with it.
+Perhaps it will allow for registering signals, arming and disarming, and manual tripping.
 
 ## Other Notes
 
